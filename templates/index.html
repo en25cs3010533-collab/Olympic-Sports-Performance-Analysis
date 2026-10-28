@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympic Sports Performance Analysis</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #173b6c;
+            color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+        }
+
+        .hero {
+            min-height: 75vh;
+            background: linear-gradient(135deg, #173b6c, #2874a6);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin-bottom: 28px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            background: white;
+            color: #173b6c;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #e4edf8;
+            transform: translateY(-2px);
+        }
+
+        .button.secondary {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .button.secondary:hover {
+            background: white;
+            color: #173b6c;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+            margin-bottom: 25px;
+        }
+
+        .card h2 {
+            color: #173b6c;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            background: #173b6c;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>Olympic Sports Analytics</h2>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/story">Story</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Olympic Sports Performance Analysis</h1>
+
+        <p>
+            Welcome to our Olympic data analysis project! Explore medal
+            counts by country, compare athlete records across sports,
+            and discover insights through interactive visualizations.
+        </p>
+
+        <div class="buttons">
+            <a class="button" href="/dashboard">View Dashboard</a>
+            <a class="button secondary" href="/story">View Story</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="card">
+            <h2>About the Project</h2>
+
+            <p>
+                This project uses Olympic data to explore medal counts
+                across countries and athlete records across

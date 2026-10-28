@@ -1,0 +1,65 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympic Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #173b6c;
+        }
+        nav {
+            background: #173b6c;
+            padding: 18px 8%;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 24px;
+        }
+        h1 {
+            text-align: center;
+            margin: 28px 10px;
+        }
+        .dashboard {
+            width: 92%;
+            max-width: 1200px;
+            height: 750px;
+            margin: auto;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/story">Story</a>
+    </nav>
+
+    <h1>Olympic Games Dashboard</h1>
+
+    <div class="dashboard">
+        <iframe
+            src="https://public.tableau.com/views/OlympicGameDashboard/Dashboard1?:showVizHome=no"
+            title="Olympic Games Dashboard"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <footer>Olympic Sports Performance Analysis</footer>
+</body>
+</html>
+```
